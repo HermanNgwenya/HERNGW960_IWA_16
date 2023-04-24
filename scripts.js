@@ -71,7 +71,6 @@ const data = {
 let Athlete  = data.response.data.NM372.firstName +' '+ data.response.data.NM372.surname
 let races = Object.keys(data.response.data.NM372.races).length
 let day = new Date(data.response.data.NM372.races[1].date).getDate() +' '+ MONTHS[11] +' '+ new Date(data.response.data.NM372.races[1].date).getFullYear()
-
 let timeAsArrayNwabisa = data.response.data.NM372.races[1].time[0] + data.response.data.NM372.races[1].time[1] + data.response.data.NM372.races[1].time[2] + data.response.data.NM372.races[1].time[3]
 timeAsArrayNwabisa = '00:'+ timeAsArrayNwabisa
 
